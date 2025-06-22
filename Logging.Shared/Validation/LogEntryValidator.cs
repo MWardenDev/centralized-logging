@@ -1,3 +1,4 @@
+using FluentValidation;
 public class LogEntryValidator : AbstractValidator<LogEntry> {
     public LogEntryValidator() {
         RuleFor(x => x.AppName).NotEmpty();
